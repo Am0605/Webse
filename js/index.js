@@ -21,7 +21,6 @@ function updatePagination() {
     });
 }
 
-// Add swipe functionality
 carousel.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
 });
@@ -40,7 +39,6 @@ carousel.addEventListener('touchend', () => {
     updateCarousel();
 });
 
-// Add click functionality for pagination dots
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         currentIndex = index;
@@ -48,7 +46,6 @@ dots.forEach((dot, index) => {
     });
 });
 
-// Initialize the first dot as active
 updatePagination();
 function toggleAccordion(id, button) {
     const content = document.getElementById(id);
